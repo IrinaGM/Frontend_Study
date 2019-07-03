@@ -1,3 +1,15 @@
 h1 {
-    color: red;
+    color: rgb(51, 146, 255);
+}
+
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 5px;
 }
