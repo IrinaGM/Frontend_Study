@@ -12,4 +12,9 @@ img {
     width: 450px;
     height: 300px;
     margin: 5px;
+    transition: all 0.1s;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
