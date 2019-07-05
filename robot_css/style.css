@@ -6,12 +6,7 @@ h1 {
 .robots {
 }
 
-.head, 
-.left_arm, 
-.torso, 
-.right_arm, 
-.left_leg, 
-.right_leg {
+.head,.left_arm,.torso,.right_arm,.left_leg,.right_leg {
 	 background-color: #5f93e8;
 }
 
@@ -23,19 +18,48 @@ h1 {
 	margin-bottom: 10px;
 } 
 
-.eyes {
-	
-}
-
 .head:hover {
 	width: 300px;
-    transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
 }
+
+.head:hover .left_eye, .head:hover .right_eye {
+	background-color: rgb(255, 96, 4);
+	-webkit-transform: background-color 1s ease-out;
+	-moz-transform: background-color 1s ease-out;
+	-o-transform: background-color 1s ease-out;
+	-ms-transform: background-color 1s ease-out;
+	transform: background-color 1s ease-out;
+}
+.eyes {
+	display: flex;
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
 
 .upper_body { 
 	width: 300px; 
 	height: 150px;
-	display: flex; 
+	margin: 0 auto;
+	display: flex;
 } 
 
 .left_arm, .right_arm { 
@@ -49,20 +73,30 @@ h1 {
 } 
 
 .right_arm { 
-	margin-left: 10px; 
+	margin-left: 10px;
+	transform-origin: left top;
+	transition: transform 1s;
 } 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-500deg);
+    -moz-transform: rotate(-500deg);
+    -o-transform: rotate(-500deg);
+    -ms-transform: rotate(-500deg);
+    transform: rotate(-500deg); 
+}
 
 .torso { 
 	width: 200px; 
 	height: 200px;
-	border-radius: 0 0 50px 50px; 
+	border-radius: 0 0 50px 50px;
 } 
 
 .lower_body { 
 	width: 200px; 
 	height: 200px;
-	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
+	display: flex;
 
 } 
 
@@ -88,26 +122,7 @@ h1 {
 	margin-left: 30px; 
 }
 
-.left_eye, .right_eye { 
-	width: 20px; 
-	height: 20px; 
-	border-radius: 15px; 
-	background-color: white;  
-} 
 
-.left_eye { 
-	/* These properties are new and you haven't encountered
-	in this course. Check out CSS Tricks to see what it does! */
-	position: relative; 
-	top: 100px; 
-	left: 40px; 
-} 
-
-.right_eye { 
-	position: relative; 
-	top: 100px; 
-	left: 120px; 
-}
 
 
 
