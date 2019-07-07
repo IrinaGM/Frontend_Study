@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="background-image">
+    <div class="header-contact">
+        <h3>Contact Me!</h3>
+    </div>
+    <div class="contact-form">
+        <form class="form" method="POST">
+                <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Your Name" required>
+                </div>    
+                <div class="form-group">
+                  <label for="emailAddress">Email address</label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="formControlSelectTask">What would you like me to do?</label>
+                  <select class="form-control" id="formControlSelectTask" required>
+                    <option selected>Select</option>
+                    <option value="website">Website</option>
+                    <option value="graphicDesign">Graphic Design</option>
+                    <option value="logo">Logo</option>
+                    <option value="allTheAbove">All the above</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="formTextArea">Is there anything else you would like to tell me?</label>
+                  <textarea class="form-control" id="formTextArea" rows="3"></textarea>
+                </div>
+                <div class="button-div">
+                    <button type="submit" class="btn btn-light">Submit</button>
+                </div>
+        </form>
+    </div>
+  </body>
+</html>
